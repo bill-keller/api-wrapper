@@ -1,0 +1,9 @@
+---
+version: 1.0
+type: "cicsCommarea-1.0"
+description: "atm deposit"
+providerProperties:
+  language: "COBOL"
+  program: "ATMDEP"
+  connectionRef: "cicsConn"
+  ccsid: "37"

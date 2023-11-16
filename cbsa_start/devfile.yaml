@@ -1,0 +1,76 @@
+schemaVersion: 2.2.0
+metadata:
+  name: api-wrapper
+  namespace: bkeller-devspaces
+attributes:
+  controller.devfile.io/devworkspace-config:
+    name: devworkspace-config
+    namespace: openshift-operators
+  controller.devfile.io/storage-type: ephemeral
+projects:
+  - git:
+      checkoutFrom:
+        revision: main
+      remotes:
+        origin: https://github.com/bill-keller/api-wrapper.git
+    name: api-wrapper
+components:
+  - attributes:
+      controller.devfile.io/merge-contribution: true
+    container:
+      env:
+        - name: CHE_DASHBOARD_URL
+          value: https://eclipse-che.apps.x3wk.dmz
+        - name: CHE_PLUGIN_REGISTRY_URL
+          value: https://eclipse-che.apps.x3wk.dmz/plugin-registry/v3
+        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
+          value: http://plugin-registry.openshift-operators.svc:8080/v3
+        - name: CLUSTER_CONSOLE_URL
+          value: https://console-openshift-console.apps.x3wk.dmz
+        - name: CLUSTER_CONSOLE_TITLE
+          value: OpenShift console
+        - name: OPENVSX_REGISTRY_URL
+          value: https://open-vsx.org
+        - name: WAZI_LICENSE_USAGE
+          value: wazi
+      image: registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b
+      memoryLimit: 1024Mi
+      sourceMapping: /projects
+    name: che-workspace
+  - container:
+      endpoints:
+        - exposure: public
+          name: zosconnect-ui
+          path: /zosConnect/designer/
+          protocol: http
+          targetPort: 9080
+      env:
+        - name: ZCON_DESIGNER_PROJECT
+          value: /projects/cbsa
+        - name: CICS_HOST
+          value: esysmvs2.ztec.dmz
+        - name: CICS_PORT
+          value: '7082'
+        - name: CICS_USER
+          value: ZCXPRV1
+        - name: CICS_PASSWORD
+          value: pppp
+        - name: CHE_DASHBOARD_URL
+          value: https://eclipse-che.apps.x3wk.dmz
+        - name: CHE_PLUGIN_REGISTRY_URL
+          value: https://eclipse-che.apps.x3wk.dmz/plugin-registry/v3
+        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
+          value: http://plugin-registry.openshift-operators.svc:8080/v3
+        - name: CLUSTER_CONSOLE_URL
+          value: https://console-openshift-console.apps.x3wk.dmz
+        - name: CLUSTER_CONSOLE_TITLE
+          value: OpenShift console
+        - name: OPENVSX_REGISTRY_URL
+          value: https://open-vsx.org
+        - name: WAZI_LICENSE_USAGE
+          value: wazi
+      image: icr.io/zosconnect/ibm-zcon-designer:3.0.74
+      memoryLimit: 4927M
+      mountSources: true
+      sourceMapping: /projects
+    name: zosconnect

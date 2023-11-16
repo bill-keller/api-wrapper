@@ -1,0 +1,74 @@
+openapi: 3.0.1
+info:
+  title: atmdep
+  description: Deposits money into an account via atm
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /deposit:
+    post:
+      tags:
+      - atmdep
+      operationId: postAtmDep
+      parameters:
+      - name: Authorization
+        in: header
+        schema:
+          type: string
+      requestBody:
+        description: request body
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/postAtmDep_request'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/postAtmDep_response_200'
+      x-codegen-request-body-name: postAtmDep_request
+components: 
+  schemas:
+    postAtmDep_request:
+      type: object
+      properties:
+        ATMDEP:
+          type: object
+          properties:
+            AcctNo:
+              maxLength: 8
+              type: string
+            DepositAmount:
+              maximum: 9999999999.99
+              minimum: -9999999999.99
+              type: number
+              format: decimal
+            Balance:
+              maximum: 9999999999.99
+              minimum: -9999999999.99
+              type: number
+              format: decimal
+    postAtmDep_response_200:
+      type: object
+      properties:
+        ATMDEP:
+          type: object
+          properties:
+            AcctNo:
+              maxLength: 8
+              type: string
+            DepositAmount:
+              maximum: 9999999999.99
+              minimum: -9999999999.99
+              type: number
+              format: decimal
+            Balance:
+              maximum: 99999999999.99
+              minimum: -9999999999.99
+              type: number
+              format: decimal
+x-original-swagger-version: "2.0"

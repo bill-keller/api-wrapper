@@ -1,0 +1,13 @@
+---
+mappings:
+- body:
+    mappings:
+    - ATMDEP:
+        mappings:
+        - AcctNo:
+            template: "{{$zosAssetResponse.commarea.atmdep1.\"ATM-ACCNO\"}}"
+        - DepositAmount:
+            expression: "$zosAssetResponse.commarea.atmdep1.\"ATM-AMT\""
+        - Balance:
+            expression: "$zosAssetResponse.commarea.atmdep1.\"ATM-BAL\""
+version: 1
