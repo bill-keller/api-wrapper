@@ -46,7 +46,7 @@ components:
           targetPort: 9080
       env:
         - name: ZCON_DESIGNER_PROJECT
-          value: /projects/cbsa
+          value: /projects/api-wrapper/cbsa
         - name: CICS_HOST
           value: esysmvs2.ztec.dmz
         - name: CICS_PORT
