@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: updcust
-  description: Update a customer's details on the CScustupd Service
+  description: Update a customer's details 
   version: 1.0.0
 servers:
 - url: /
@@ -9,7 +9,7 @@ paths:
   /update:
     put:
       tags:
-      - updcust
+      - customer
       operationId: putCScustupd
       parameters:
       - name: Authorization
