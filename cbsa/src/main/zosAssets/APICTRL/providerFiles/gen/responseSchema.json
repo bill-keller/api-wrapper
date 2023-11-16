@@ -1,0 +1,52 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "properties" : {
+    "abendCode" : {
+      "type" : "string"
+    },
+    "commarea" : {
+      "type" : "object",
+      "properties" : {
+        "apictrl" : {
+          "type" : "object",
+          "properties" : {
+            "API-OPERATION" : {
+              "maxLength" : 4,
+              "type" : "string",
+              "x-ibm-zcon-metadata" : {
+                "type" : "03 API-OPERATION PIC X(4) USAGE DISPLAY.",
+                "name" : "API-OPERATION"
+              }
+            },
+            "API-CUSTNO" : {
+              "maxLength" : 10,
+              "type" : "string",
+              "x-ibm-zcon-metadata" : {
+                "type" : "03 API-CUSTNO PIC X(10) USAGE DISPLAY.",
+                "name" : "API-CUSTNO"
+              }
+            },
+            "API-NAME" : {
+              "maxLength" : 60,
+              "type" : "string",
+              "x-ibm-zcon-metadata" : {
+                "type" : "03 API-NAME PIC X(60) USAGE DISPLAY.",
+                "name" : "API-NAME"
+              }
+            },
+            "API-ADDR" : {
+              "maxLength" : 160,
+              "type" : "string",
+              "x-ibm-zcon-metadata" : {
+                "type" : "03 API-ADDR PIC X(160) USAGE DISPLAY.",
+                "name" : "API-ADDR"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "description" : "General wrapper for CICS COMMAREA z/OS Asset responses"
+}

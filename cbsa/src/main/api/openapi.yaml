@@ -1,0 +1,66 @@
+openapi: 3.0.1
+info:
+  title: updcust
+  description: Update a customer's details 
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /update:
+    put:
+      tags:
+      - customer
+      operationId: putCScustupd
+      parameters:
+      - name: Authorization
+        in: header
+        schema:
+          type: string
+      requestBody:
+        description: request body
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/putCScustupd_request'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/putCScustupd_response_200'
+      x-codegen-request-body-name: putCScustupd_request
+components:
+  schemas:
+    putCScustupd_request:
+      type: object
+      properties:
+        UpdCust:
+          type: object
+          properties:
+            ApiCustno:
+              maxLength: 10
+              type: string
+            ApiName:
+              maxLength: 60
+              type: string
+            ApiAddress:
+              maxLength: 160
+              type: string
+    putCScustupd_response_200:
+      type: object
+      properties:
+        UpdCust:
+          type: object
+          properties:
+            ApiCustno:
+              maxLength: 10
+              type: string
+            ApiName:
+              maxLength: 60
+              type: string
+            ApiAddress:
+              maxLength: 160
+              type: string
+x-original-swagger-version: "2.0"
