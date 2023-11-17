@@ -1,7 +1,7 @@
 schemaVersion: 2.2.0
 metadata:
   name: api-wrapper
-  namespace: bkeller-devspaces
+  namespace: ensonoadmin-devspaces
 attributes:
   controller.devfile.io/devworkspace-config:
     name: devworkspace-config
@@ -48,9 +48,9 @@ components:
         - name: ZCON_DESIGNER_PROJECT
           value: /projects/api-wrapper/cbsa
         - name: CICS_HOST
-          value: esysmvs2.ztec.dmz
+          value: 172.191.134.201
         - name: CICS_PORT
-          value: '7082'
+          value: '29555'
         - name: CICS_USER
           value: ZCXPRV1
         - name: CICS_PASSWORD

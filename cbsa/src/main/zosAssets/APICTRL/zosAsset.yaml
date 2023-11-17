@@ -1,9 +1,0 @@
----
-version: 1.0
-type: "cicsCommarea-1.0"
-description: "update customer address"
-providerProperties:
-  language: "COBOL"
-  program: "APICTRL"
-  connectionRef: "cicsConn"
-  ccsid: "37"

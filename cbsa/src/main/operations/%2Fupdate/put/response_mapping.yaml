@@ -1,5 +1,0 @@
----
-version: 1
-response_200.yaml:
-  condition: true
-  httpStatusCode: 200

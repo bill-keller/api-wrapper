@@ -1,0 +1,28 @@
+[11/20/23 20:10:16:381 UTC] - BAQW0056I: Undeploying API project.
+[11/20/23 20:10:16:382 UTC] - BAQW0060I: API project was not deployed already.
+[11/20/23 20:10:16:382 UTC] - BAQW0063I: Building API project.
+
+> Task :clean
+BAQG0001I: Deleting generated Java in /workspace/project/src/gen
+BAQG0002I: Deleting generated config in /workspace/project/src/main/webapp
+
+> Task :zosConnectPreBuildTask
+> Task :openApiGenerate FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':openApiGenerate'.
+> BAQG0003E: openApiGenerate task failed since inputSpec does not exist.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+3 actionable tasks: 3 executed
+[11/20/23 20:10:19:310 UTC] - BAQW0065E: API project build failed.
+[11/20/23 20:10:19:310 UTC] - Could not execute build using connection to Gradle installation '/opt/gradle'.
