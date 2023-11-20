@@ -50,7 +50,7 @@ components:
         - name: CICS_HOST
           value: 172.191.134.201
         - name: CICS_PORT
-          value: '29555'
+          value: '32159'
         - name: CICS_USER
           value: ZCXPRV1
         - name: CICS_PASSWORD

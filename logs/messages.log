@@ -355,3 +355,14 @@ Java Library path = /opt/ibm/java/jre/lib/amd64/compressedrefs:/opt/ibm/java/jre
 [11/20/23 20:09:23:282 UTC] 00000309 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [api] [/] [updcust]: Destroy successful.
 [11/20/23 20:09:23:290 UTC] 00000309 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application api has stopped successfully.
 [11/20/23 20:09:23:306 UTC] 00000408 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/ibm/wlp/output/defaultServer/logs/state/plugin-cfg.xml.
+[11/20/23 20:32:01:640 UTC] 000003e7 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0016I: Starting server configuration update.
+[11/20/23 20:32:01:641 UTC] 000003e7 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/defaults/keystore.xml
+[11/20/23 20:32:01:642 UTC] 000003e7 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/cics.xml
+[11/20/23 20:32:01:643 UTC] 000003e7 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/http-ssl-endpoint.xml
+[11/20/23 20:32:01:645 UTC] 000003e7 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/server.xml
+[11/20/23 20:32:01:646 UTC] 000003e7 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/tls.xml
+[11/20/23 20:32:01:667 UTC] 00000427 com.ibm.zosconnect.cics.CicsIpicConnection                   E BAQR0693E: The user name <cicsUsername> specified by the zosconnect_authData element cicsCredentials exceeds the maximum length supported by CICS.
+[11/20/23 20:32:01:691 UTC] 000002fe com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[11/20/23 20:32:02:814 UTC] 000003e7 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0017I: The server configuration was successfully updated in 1.174 seconds.
+[11/20/23 20:32:02:817 UTC] 000002fe com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0015I: The server has the following interim fixes active in the runtime: PH50863. For a full listing of installed fixes run: productInfo version --ifixes
+[11/20/23 20:32:02:819 UTC] 000002fe com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0008I: Feature update completed in 1.150 seconds.

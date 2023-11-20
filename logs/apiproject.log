@@ -1,6 +1,6 @@
-[11/20/23 20:10:16:381 UTC] - BAQW0056I: Undeploying API project.
-[11/20/23 20:10:16:382 UTC] - BAQW0060I: API project was not deployed already.
-[11/20/23 20:10:16:382 UTC] - BAQW0063I: Building API project.
+[11/20/23 20:32:02:049 UTC] - BAQW0056I: Undeploying API project.
+[11/20/23 20:32:02:049 UTC] - BAQW0060I: API project was not deployed already.
+[11/20/23 20:32:02:049 UTC] - BAQW0063I: Building API project.
 
 > Task :clean
 BAQG0001I: Deleting generated Java in /workspace/project/src/gen
@@ -22,7 +22,7 @@ Execution failed for task ':openApiGenerate'.
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 2s
+BUILD FAILED in 1s
 3 actionable tasks: 3 executed
-[11/20/23 20:10:19:310 UTC] - BAQW0065E: API project build failed.
-[11/20/23 20:10:19:310 UTC] - Could not execute build using connection to Gradle installation '/opt/gradle'.
+[11/20/23 20:32:03:767 UTC] - BAQW0065E: API project build failed.
+[11/20/23 20:32:03:768 UTC] - Could not execute build using connection to Gradle installation '/opt/gradle'.
