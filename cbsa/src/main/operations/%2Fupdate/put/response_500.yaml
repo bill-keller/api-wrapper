@@ -1,0 +1,8 @@
+---
+mappings:
+- body:
+    mappings:
+    - message:
+        template: "Misc error. Failure_code : {{$zosAssetResponse.commarea.apictrl.\"\
+          API-UPD-FAIL-CD\"}}"
+version: 1

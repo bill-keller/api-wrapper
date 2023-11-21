@@ -1,0 +1,14 @@
+---
+mappings:
+- commarea:
+    mappings:
+    - apictrl:
+        mappings:
+        - API-OPERATION:
+            template: "UPDT"
+        - API-CUSTNO:
+            template: "{{$body.UpdCust.CustomerNumber}}"
+        - API-NAME:
+            template: "{{$body.UpdCust.Name}}"
+        - API-ADDR:
+            template: "{{$body.UpdCust.Address}}"

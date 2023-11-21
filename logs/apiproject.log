@@ -1,28 +1,34 @@
-[11/20/23 20:32:02:049 UTC] - BAQW0056I: Undeploying API project.
-[11/20/23 20:32:02:049 UTC] - BAQW0060I: API project was not deployed already.
-[11/20/23 20:32:02:049 UTC] - BAQW0063I: Building API project.
+[11/21/23 19:58:46:835 UTC] - BAQW0056I: Undeploying API project.
+[11/21/23 19:58:46:836 UTC] - BAQW0063I: Building API project.
 
 > Task :clean
 BAQG0001I: Deleting generated Java in /workspace/project/src/gen
 BAQG0002I: Deleting generated config in /workspace/project/src/main/webapp
 
 > Task :zosConnectPreBuildTask
-> Task :openApiGenerate FAILED
 
-FAILURE: Build failed with an exception.
+> Task :openApiGenerate
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+Successfully generated code to /workspace/project
 
-* What went wrong:
-Execution failed for task ':openApiGenerate'.
-> BAQG0003E: openApiGenerate task failed since inputSpec does not exist.
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :war
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
 
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-
-* Get more help at https://help.gradle.org
-
-BUILD FAILED in 1s
-3 actionable tasks: 3 executed
-[11/20/23 20:32:03:767 UTC] - BAQW0065E: API project build failed.
-[11/20/23 20:32:03:768 UTC] - Could not execute build using connection to Gradle installation '/opt/gradle'.
+BUILD SUCCESSFUL in 1s
+6 actionable tasks: 6 executed
+[11/21/23 19:58:48:649 UTC] - BAQW0064I: API project built successfully.
+[11/21/23 19:58:48:650 UTC] - BAQW0057I: Deploying API project.
+[11/21/23 19:58:49:652 UTC] - BAQW0068I: API project deployed successfully.

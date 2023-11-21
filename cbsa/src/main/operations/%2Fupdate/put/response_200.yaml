@@ -1,0 +1,15 @@
+---
+mappings:
+- body:
+    mappings:
+    - UpdCust:
+        mappings:
+        - CustomerNumber:
+            template: "{{$zosAssetResponse.commarea.apictrl.\"API-CUSTNO\"}}"
+        - Name:
+            template: "{{$zosAssetResponse.commarea.apictrl.\"API-NAME\"}}"
+        - Address:
+            template: "{{$zosAssetResponse.commarea.apictrl.\"API-ADDR\"}}"
+        - UpdateSuccess:
+            template: "{{$zosAssetResponse.commarea.apictrl.\"API-UPD-SUCCESS\"}}"
+version: 1

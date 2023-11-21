@@ -2,9 +2,11 @@ README.md
 src/gen/java/com/ibm/zosconnect/api/RestApplication.java
 src/gen/java/com/ibm/zosconnect/api/RestResourceRoot.java
 src/gen/java/com/ibm/zosconnect/api/UpdateApi.java
+src/gen/java/com/ibm/zosconnect/api/model/ErrorResponse.java
 src/gen/java/com/ibm/zosconnect/api/model/PutCScustupdRequest.java
 src/gen/java/com/ibm/zosconnect/api/model/PutCScustupdRequestUpdCust.java
 src/gen/java/com/ibm/zosconnect/api/model/PutCScustupdResponse200.java
+src/gen/java/com/ibm/zosconnect/api/model/PutCScustupdResponse200UpdCust.java
 src/main/liberty/config/server.xml
 src/main/webapp/META-INF/MANIFEST.MF
 src/main/webapp/META-INF/beans.xml

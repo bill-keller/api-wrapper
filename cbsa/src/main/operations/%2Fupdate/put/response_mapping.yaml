@@ -1,0 +1,16 @@
+---
+version: 1
+response_200.yaml:
+  condition: "$zosAssetResponse.commarea.apictrl.\"API-UPD-SUCCESS\" = \"Y\""
+  httpStatusCode: 200
+response_400.yaml:
+  condition: "($zosAssetResponse.commarea.apictrl.\"API-UPD-SUCCESS\" = \"N\") and\
+    \ ($zosAssetResponse.commarea.apictrl.\"API-UPD-FAIL-CD\" = \"T\")"
+  httpStatusCode: 400
+response_404.yaml:
+  condition: "($zosAssetResponse.commarea.apictrl.\"API-UPD-SUCCESS\" = \"N\") and\
+    \ ($zosAssetResponse.commarea.apictrl.\"API-UPD-FAIL-CD\" = \"1\")"
+  httpStatusCode: 404
+response_500.yaml:
+  condition: true
+  httpStatusCode: 500

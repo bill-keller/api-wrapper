@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" direction="0">
+    <message id="1">
+        <segment id="1">
+            <field name="apictrl" originalName="apictrl" included="Y" path="apictrl" fileName="apictrl.cpy" structureIndex="0" structSrcFileName="apictrl.cpy" srcLine="01 apictrl.">
+                <startPos>1</startPos>
+                <bytes>236</bytes>
+                <maxBytes>236</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="API-OPERATION" originalName="API-OPERATION" included="Y" path="apictrl.API-OPERATION" srcLine="03 API-OPERATION PIC X(4) USAGE DISPLAY.">
+                    <startPos>1</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="API-CUSTNO" originalName="API-CUSTNO" included="Y" path="apictrl.API-CUSTNO" srcLine="03 API-CUSTNO PIC X(10) USAGE DISPLAY.">
+                    <startPos>5</startPos>
+                    <bytes>10</bytes>
+                    <maxBytes>10</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="API-NAME" originalName="API-NAME" included="Y" path="apictrl.API-NAME" srcLine="03 API-NAME PIC X(60) USAGE DISPLAY.">
+                    <startPos>15</startPos>
+                    <bytes>60</bytes>
+                    <maxBytes>60</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="API-ADDR" originalName="API-ADDR" included="Y" path="apictrl.API-ADDR" srcLine="03 API-ADDR PIC X(160) USAGE DISPLAY.">
+                    <startPos>75</startPos>
+                    <bytes>160</bytes>
+                    <maxBytes>160</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="API-UPD-SUCCESS" originalName="API-UPD-SUCCESS" included="Y" path="apictrl.API-UPD-SUCCESS" srcLine="03 API-UPD-SUCCESS PIC X USAGE DISPLAY.">
+                    <startPos>235</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="API-UPD-FAIL-CD" originalName="API-UPD-FAIL-CD" included="Y" path="apictrl.API-UPD-FAIL-CD" srcLine="03 API-UPD-FAIL-CD PIC X USAGE DISPLAY.">
+                    <startPos>236</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>
