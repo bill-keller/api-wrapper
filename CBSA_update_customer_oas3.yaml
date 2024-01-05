@@ -6,7 +6,7 @@ info:
 servers:
 - url: /
 paths:
-  /update:
+  /customer:
     put:
       tags:
       - customer
